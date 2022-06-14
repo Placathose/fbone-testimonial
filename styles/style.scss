@@ -9,6 +9,7 @@
 body {
   padding: 45px 67px;
   background-color: #105624;
+  
 }
 
 h1 {
@@ -49,4 +50,55 @@ p {
 
 .grid-container {
   background-color: #105624;
+}
+
+.grid-parent {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+.title { 
+  grid-area: 1 / 1 / 3 / 10; 
+  padding: 40px 0 30px 50px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    max-width: 560px;
+  }
+}
+.index { 
+  grid-area: 1 / 10 / 2 / 13; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.arrows { grid-area: 2 / 10 / 3 / 13; }
+.image { grid-area: 3 / 1 / 7 / 6; }
+
+.description { 
+  grid-area: 3 / 6 / 7 / 13; 
+
+  .subtitle {
+    padding: 43px 0 54px 67px;
+
+    h2 {
+      max-width: 531px;
+    }
+  }
+  
+  .client-name {
+    display: flex;
+    
+  }
+
+
+
 }
