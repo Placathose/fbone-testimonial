@@ -9,45 +9,84 @@
 </head>
 <body>
   <section class="grid-parent">
-    <div class="grid-item title">
+
+    <div class="main-title">
       <p class="testimonials">Testimonials</p>
       <h1>What our customers said</h1>
-      <div class="circular-tag"></div>
+      <div class="circular-tag">
+
+      </div>
     </div>
 
-    <div class="grid-item index">
+    <div class="index">
       <h2>01</h2>
     </div>
 
-    <div class="grid-item arrows">
+    <div class="arrows">
 
     </div>
 
-    <div class="grid-item image">
-      <img src="./assets/illustration.png" alt="">
+    <div class="illustration">
+      <img class="img-not-active" src="./assets/illustration.png" alt="">
     </div>
 
-    <div class="grid-item description">
-      <div class="grid-item subtitle">
-        <h2>Amazing food and top quality service</h2>
-      </div>
+    <div class="dynamic-content">
 
-      <div class="grid-item client-name">
-        <h3>Anthony W.</h3>
-        <h3>Happy Valley</h3>
-      </div>
+      <h2 class="client-thought">Amazing food and top quality service</h2>
 
-      <div class="grid-item location">
+      <div class="user-store">
+        <div>
+          <h3 class="client-name">Anthony W.</h3>
+          <h3 class="client-name not-active">Dickson L.</h3>
+          <h3 class="client-name not-active">Peter C.</h3>
+          <h3 class="client-name not-active">Eugene L.</h3>
+        </div>
+        <div>
+          <h3 class="store-location">Happy Valley</h3>
+          <h3 class="store-location not-active">Causeway Bay</h3>
+          <h3 class="store-location not-active">Wan Chai</h3>
+          <h3 class="store-location not-active">Mid-Levels</h3>
+        </div>
       </div>
-
-      <p>"This is my second visit and everything has improved so much! 
-        It was very busy and they were very good about arranging a table for us. 
-        Rupa was serving us and she did a really great job. 
-        She was very warm and happy to help with anything. 
-        I had the burger which was delicious especially the chips! 
-        Highly recommend and I will definitely be back, keep up the good work!"
-      </p>
+      
+      <div class="main-carousel">
+        <blockquote class="description">"NUMBER1 This is my second visit and everything has improved so much! 
+          It was very busy and they were very good about arranging a table for us. 
+          Rupa was serving us and she did a really great job. 
+          She was very warm and happy to help with anything. 
+          I had the burger which was delicious especially the chips! 
+          Highly recommend and I will definitely be back, keep up the good work!"
+        </blockquote>
+        <blockquote class="description ">"NUMBER2 This is my second visit and everything has improved so much! 
+          It was very busy and they were very good about arranging a table for us. 
+          Rupa was serving us and she did a really great job. 
+          She was very warm and happy to help with anything. 
+          I had the burger which was delicious especially the chips! 
+          Highly recommend and I will definitely be back, keep up the good work!"
+        </blockquote>
+        <blockquote class="description ">"NUMBER3 This is my second visit and everything has improved so much! 
+          It was very busy and they were very good about arranging a table for us. 
+          Rupa was serving us and she did a really great job. 
+          She was very warm and happy to help with anything. 
+          I had the burger which was delicious especially the chips! 
+          Highly recommend and I will definitely be back, keep up the good work!"
+        </blockquote>
+        <blockquote class="description ">"NUMBER4 This is my second visit and everything has improved so much! 
+          It was very busy and they were very good about arranging a table for us. 
+          Rupa was serving us and she did a really great job. 
+          She was very warm and happy to help with anything. 
+          I had the burger which was delicious especially the chips! 
+          Highly recommend and I will definitely be back, keep up the good work!"
+        </blockquote>
+      </div>
     </div>
+    
+    <div class="mobile-arrows">
+      <!-- <Button class="button button--previous">Previous</Button>
+      <Button class="button button--previous-wrapped">Previous wrapped</Button> -->
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./main.js"></script>
   </section>
 </body>
