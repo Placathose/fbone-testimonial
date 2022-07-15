@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./styles/glider.min.css">
+  <title>Feather and Bone</title>
 </head>
+
 <body>
   <section class="grid-parent">
 
@@ -23,7 +26,11 @@
     </div>
 
     <div class="arrows">
-
+      <div class="button-container">
+        <button aria-label="Previous" class="glider-prev">Prev</button>
+        <button aria-label="Next" class="glider-next">Next</button>
+      </div>
+      
     </div>
 
     <div class="illustration">
@@ -48,46 +55,51 @@
           <h3 class="store-location not-active">Mid-Levels</h3>
         </div>
       </div>
-      
-      <div class="main-carousel">
-        <blockquote class="description">"NUMBER1 This is my second visit and everything has improved so much! 
-          It was very busy and they were very good about arranging a table for us. 
-          Rupa was serving us and she did a really great job. 
-          She was very warm and happy to help with anything. 
-          I had the burger which was delicious especially the chips! 
+
+      <div class="glider">
+        <blockquote class="description">"NUMBER1 This is my second visit and everything has improved so much!
+          It was very busy and they were very good about arranging a table for us.
+          Rupa was serving us and she did a really great job.
+          She was very warm and happy to help with anything.
+          I had the burger which was delicious especially the chips!
           Highly recommend and I will definitely be back, keep up the good work!"
         </blockquote>
-        <blockquote class="description ">"NUMBER2 This is my second visit and everything has improved so much! 
-          It was very busy and they were very good about arranging a table for us. 
-          Rupa was serving us and she did a really great job. 
-          She was very warm and happy to help with anything. 
-          I had the burger which was delicious especially the chips! 
+        <blockquote class="description ">"NUMBER2 This is my second visit and everything has improved so much!
+          It was very busy and they were very good about arranging a table for us.
+          Rupa was serving us and she did a really great job.
+          She was very warm and happy to help with anything.
+          I had the burger which was delicious especially the chips!
           Highly recommend and I will definitely be back, keep up the good work!"
         </blockquote>
-        <blockquote class="description ">"NUMBER3 This is my second visit and everything has improved so much! 
-          It was very busy and they were very good about arranging a table for us. 
-          Rupa was serving us and she did a really great job. 
-          She was very warm and happy to help with anything. 
-          I had the burger which was delicious especially the chips! 
+        <blockquote class="description ">"NUMBER3 This is my second visit and everything has improved so much!
+          It was very busy and they were very good about arranging a table for us.
+          Rupa was serving us and she did a really great job.
+          She was very warm and happy to help with anything.
+          I had the burger which was delicious especially the chips!
           Highly recommend and I will definitely be back, keep up the good work!"
         </blockquote>
-        <blockquote class="description ">"NUMBER4 This is my second visit and everything has improved so much! 
-          It was very busy and they were very good about arranging a table for us. 
-          Rupa was serving us and she did a really great job. 
-          She was very warm and happy to help with anything. 
-          I had the burger which was delicious especially the chips! 
+        <blockquote class="description ">"NUMBER4 This is my second visit and everything has improved so much!
+          It was very busy and they were very good about arranging a table for us.
+          Rupa was serving us and she did a really great job.
+          She was very warm and happy to help with anything.
+          I had the burger which was delicious especially the chips!
           Highly recommend and I will definitely be back, keep up the good work!"
         </blockquote>
+
+        <div role="tablist" class="dots"></div>
       </div>
-    </div>
-    
-    <div class="mobile-arrows">
-      <!-- <Button class="button button--previous">Previous</Button>
-      <Button class="button button--previous-wrapped">Previous wrapped</Button> -->
+
     </div>
 
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="./main.js"></script>
+    <div class="button-container hidden">
+      <button aria-label="Previous" class="glider-prev">Prev</button>
+      <button aria-label="Next" class="glider-next">Next</button>
+    </div>
+    
   </section>
+  <!-- <script src="glider.min.js"></script> -->
+  <script src="./glider.min.js"></script>
+  <script src="./main.js"></script>
 </body>
+
 </html>

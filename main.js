@@ -1,11 +1,10 @@
-var elem = document.querySelector('.main-carousel');
 
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true,
-  draggable: false
-});
-
-
-$('.main-carousel').flickity();
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    dots: '#dots',
+    draggable: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+  });

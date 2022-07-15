@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Montserrat:wght@600;800&display=swap');
 
 
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,8 @@
 
  body {
   background-color: #105624;
-  overflow-y: hidden;
+  
+  
 }
 /*body {
   padding: 45px 67px;
@@ -50,234 +52,313 @@ h3 {
   color: #EDE7DC;
 }
 
+
 blockquote {
   font-family: 'Cormorant';
   color: #EDE7DC;
+  max-width: 600px;
 }
 
 
 
-@media only screen and (max-width: 600px) {
-  // body {
-    
-  // }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .img-not-active{
-    display: none;
-   }
-
-  .grid-parent {
-    border: 2px solid #EDE7DC;
-    height: 94vh;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .main-title {
-    @include align-middle();
-    min-height: 200px;
-    border-bottom: 2px solid #EDE7DC;
-
-    p {
-       color: #EDE7DC;
-       font-family: 'Montserrat', sans-serif;
-       margin: 30px 0 20px 0;
-    }
-    
-    h1 {
-      text-align: center;
-      width: 300px;
-      margin: 0 auto;
-    }
-  }
-
-  .index, .arrows {
-    display: none;
-  }
-
-  .dynamic-content {
-
-    border-bottom: 2px solid #EDE7DC;
-
-    h2.client-thought {
-      width: 300px;
-      text-align: center;
-      margin: 20px auto;
-    }
-
-    .user-store {
-      display: flex;
-      
-      div > h3 {
-        font-size: 16px;
-      }
-
-      div {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        padding: 15px 0;
-        border-top: 2px solid #EDE7DC;
-        border-bottom: 2px solid #EDE7DC;
-      }
-
-      div:nth-child(1) {
-        border-right: 2px solid #EDE7DC;
-      }
-
-    }
-
-    .description {
-      padding: 40px 20px;
-      font-size: 18px;
-    }
-
-    .flickity-page-dots {
-      color: #EDE7DC;
-    }
-
-        /* no circle */
-    .flickity-button {
-      background: transparent;
-      border: none;
-    }
-    /* big previous & next buttons */
-    .flickity-prev-next-button {
-      width: 20px;
-      height: 20px;
-    }
-    /* icon color */
-    .flickity-button-icon {
-      fill: white;
-    }
-    .next {
-      float: right;
-    }
-    /* hide disabled button */
-    
-  }
-
-
-
-  
-
-
+h1 {
+  font-size: 32px;
 }
 
-
-@media only screen and (max-width: 768px) {
-
-  
-
+h2 {
+  font-size: 24px;
 }
 
-/*
-.not-active{
+.img-not-active{
   display: none;
  }
- 
- .testimonials {
-   color: #EDE7DC;
-   font-family: 'Montserrat', sans-serif;
- }
- 
- .grid-container {
-   background-color: #105624;
- }
- 
- .grid-parent {
-   height: 90vh;
-   display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-template-rows: repeat(6, 1fr);
-   grid-column-gap: 0px;
-   grid-row-gap: 0px;
-   border: 2px solid #EDE7DC;
+
+.grid-parent {
+  border: 2px solid #EDE7DC;
+  // height: 94vh;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main-title {
+  @include align-middle();
+  min-height: 200px;
+  border-bottom: 2px solid #EDE7DC;
+
+  p {
+     color: #EDE7DC;
+     font-family: 'Montserrat', sans-serif;
+     margin: 30px 0 20px 0;
+  }
+  
+  h1 {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.index {
+  display: none;
+}
+
+.dynamic-content {
+
+  border-bottom: 2px solid #EDE7DC;
+  
+
+  h2.client-thought {
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .user-store {
+    display: flex;
+    
+    div > h3 {
+      font-size: 16px;
+    }
+
+    div {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding: 30px 0;
+      border-top: 2px solid #EDE7DC;
+      border-bottom: 2px solid #EDE7DC;
+    }
+
+    div:nth-child(1) {
+      border-right: 2px solid #EDE7DC;
+    }
+
+  }
+
+
+  
+}
+
+// NOTE: Each div inside a slider should have 
+//a max-width & margin right for every screen size (Mobile, tablet and desktop)
+.description {
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.glider {
+  padding: 30px 10px;
+  // overflow: hidden;
+  max-width: 700px;
+  // height: 200px;
+}
+
+
+// NOTE: For the buttons, we need to change their position to the flow of the html(Static)
+.glider-prev, .glider-next {
+  background-color: white;
+  position: static !important;
+  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 40px auto;
+
+  button {
+    font-size: 24px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 20px;
+    max-width: 100%;
+    // overflow: hidden;
+    max-height: 100%;
+  }
+  .grid-parent {
+    // overflow: auto;
+    }
+
+    .main-title {
+      
+    
+      p {
+        font-size: 20px;
+         
+      }
+      
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    .dynamic-content {
+
+      border-bottom: 2px solid #EDE7DC;
+      
+    
+      h2.client-thought {
+        font-size: 32px;
+        max-width: 600px;
+        // background-color: blue;
+      }
+
+      blockquote {
+        font-size: 32px;
+        // This is why I am able to put one blockquote at a time. Setting the max-width to this value.
+        max-width: 700px;
+        padding: 0 10px;
+      }
+    
+      .user-store {
+        display: flex;
+        
+        div > h3 {
+          font-size: 24px;
+        }
+    
+        div {
+          padding: 45px 0;
+        }
+    
+        div:nth-child(1) {
+          
+        }
+    
+      }
+       
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 300px;
+      margin: 40px auto;
+
+      button {
+        font-size: 32px;
+      }
+    }
+
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+  .img-not-active{
+    display: inline;
+    margin: 15px 0 0 10px;
    }
-   
- .main-title { 
-   grid-area: 1 / 1 / 3 / 10; 
-   padding: 40px 0 30px 50px;
-   border-bottom: 2px solid #EDE7DC;
-   border-right: 2px solid #EDE7DC;
- 
-   p {
-     margin-bottom: 15px;
-   }
- 
-   h1 {
-     max-width: 560px;
-   }
- }
- 
- .index { 
-   grid-area: 1 / 10 / 2 / 13; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-bottom: 2px solid #EDE7DC;;
- 
- }
- 
- .arrows { 
-   grid-area: 2 / 10 / 3 / 13; 
-   border-bottom: 2px solid #EDE7DC;;
- 
- }
- 
- .illustration { 
-   grid-area: 3 / 1 / 7 / 6; 
-   border-right: 2px solid #EDE7DC;
- 
-   img {
-     max-width:100%;
-     max-height:100%;
-   }
- }
- 
- .dynamic-content { 
-   grid-area: 3 / 6 / 7 / 13; 
- 
-   .client-thought {
-     padding: 43px 0 54px 67px;
-     border-bottom: 2px solid #EDE7DC;
- 
-     h2 {
-       max-width: 531px;
-     }
-   }
-   
-   .user-store {
-     display: flex;
-     border-bottom: 2px solid #EDE7DC;
- 
-     div {
-       width: 50%;
-       display: flex;
-       justify-content: center;
-       padding: 15px 0;
-     }
-     div:nth-child(1) {
-       border-right: 2px solid #EDE7DC;
+  .hidden {
+    display: none;
+  } 
+
+   .grid-parent {
+     height: 90vh;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(6, 1fr);
+     grid-column-gap: 0px;
+     grid-row-gap: 0px;
+     border: 2px solid #EDE7DC;
+     padding: 0;
      }
      
+   .main-title { 
+     grid-area: 1 / 1 / 3 / 10; 
+     padding: 40px 0 30px 50px;
+     border-bottom: 2px solid #EDE7DC;
+     border-right: 2px solid #EDE7DC;
+   
+     p {
+       margin-bottom: 15px;
+     }
+   
+     h1 {
+       max-width: 560px;
+     }
    }
- 
-   .description {
-     margin: 10px;
+   
+   .index { 
+     grid-area: 1 / 10 / 2 / 13; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 2px solid #EDE7DC;;
+   
    }
- 
- 
- 
- }
+   
+   .arrows { 
+     grid-area: 2 / 10 / 3 / 13; 
+     border-bottom: 2px solid #EDE7DC;
 
-*/
+     .button-container{
+        margin-left: 30px;
+        margin-right: 30px;
+     }
+   
+   }
+   
+   .illustration { 
+     grid-area: 3 / 1 / 7 / 6; 
+     border-right: 2px solid #EDE7DC;
+   
+     img {
+       max-width:100%;
+       max-height:100%;
+     }
+   }
+   
+   .dynamic-content { 
+     grid-area: 3 / 6 / 7 / 13; 
+     border-bottom:none;
+   
+     .client-thought {
+      //  padding: 43px 0 54px 67px;
+      //  border-bottom: 2px solid #EDE7DC;
+      text-align: start !important;
+   
+       h2 {
+         max-width: 531px;
+       }
+     }
+     
+     .user-store {
+       display: flex;
+      //  border-bottom: 2px solid #EDE7DC;
+   
+       div {
+         width: 50%;
+         display: flex;
+         justify-content: center;
+         padding: 15px 0;
+       }
+       div:nth-child(1) {
+         border-right: 2px solid #EDE7DC;
+       }
+       
+     }
+   
+     .description {
+       margin: 10px;
+       font-size: 20px;
+     }
+   }
+   
+
+}
+
+
 
