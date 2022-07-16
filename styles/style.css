@@ -231,6 +231,10 @@ h2 {
   .hidden {
     display: none;
   }
+  .arrows {
+    display: -ms-grid;
+    display: grid;
+  }
   .grid-parent {
     height: 90vh;
     display: -ms-grid;
@@ -286,8 +290,8 @@ h2 {
     border-bottom: 2px solid #EDE7DC;
   }
   .arrows .button-container {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 auto;
+    width: 200px;
   }
   .illustration {
     -ms-grid-row: 3;
